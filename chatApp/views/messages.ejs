@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatAPP</title>
+  </head>
+  <body>
+      <div style="width: 100%; display: flex; flex-direction: column">
+          <div style="width: 100%; display: flex; flex-direction: row; justify-content: space-between;">
+              <a href="/leaveRoom/:room"> Leave Room </a>    
+              <a href="/join_room"> Join Room </a>    
+              <a href="/makeRoom"> Create Room </a>    
+          </div> 
+              <br><br>
+              <form action="/bark_dog" method="post" style="margin-top:220px; width: 100%; text-align: center;">
+                  <textarea name="dogs_bark" rows="4" cols="40" placeholder="Bark here Dog!"></textarea>
+                  <input type="hidden" name="room_name" value="<%= roomName %>">
+                  <br>
+                  <button type="submit">Barked</button>
+              </form>
+      </div>
+
+  </body>
+</html>
